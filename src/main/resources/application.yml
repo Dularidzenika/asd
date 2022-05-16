@@ -1,0 +1,33 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  application:
+    name: root
+security:
+  user:
+    password: password
+  oauth2:
+    resource:
+      filter-order: 3
+
+  mail:
+    host: localhost
+    port: 3306
+    username: hello
+    password: hello
+
+    properties:
+      mail:
+        smtp:
+          ssl:
+            trust: "*"
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+
